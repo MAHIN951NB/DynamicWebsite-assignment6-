@@ -69,6 +69,7 @@ const selected_category = async (details) => {
 const x = document.getElementById('load_all')
 x.addEventListener('click', function () {
     const del = document.getElementById('tree-con')
+    del.classList.remove('warn')
     del.innerHTML = ""
     display()
 })
