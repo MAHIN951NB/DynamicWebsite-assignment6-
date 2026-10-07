@@ -39,8 +39,9 @@ const hideloading = () => {
 };
 
 const selected_category = async (details) => {
-    showLoading()
     const y = document.getElementById('tree-con');
+    y.classList.remove('warn')
+    showLoading()
     y.innerHTML = ""
     const url = (`https://openapi.programming-hero.com/api/category/${details}`)
     const x = await fetch(url)
